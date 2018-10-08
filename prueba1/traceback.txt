@@ -1,0 +1,66 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While loading <'Image' u'images\\imagenrandom.jpg'>:
+  File "game/script.rpy", line 8, in script
+    cgc "Este es el primer paso :3"
+Exception: Backslash in filename, use '/' instead: u'images\\imagenrandom.jpg'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 8, in script
+    cgc "Este es el primer paso :3"
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\ast.py", line 678, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\exports.py", line 1203, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\character.py", line 1027, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\character.py", line 819, in do_display
+    **display_args)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\character.py", line 568, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\ui.py", line 289, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\core.py", line 2662, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\core.py", line 3148, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\core.py", line 2065, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 487, in renpy.display.render.render_screen
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\image.py", line 497, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\im.py", line 580, in render
+    return cache.get(self, render=True)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\im.py", line 266, in get
+    surf = image.load()
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\im.py", line 625, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\loader.py", line 567, in load
+    raise Exception("Backslash in filename, use '/' instead: %r" % name)
+Exception: Backslash in filename, use '/' instead: u'images\\imagenrandom.jpg'
+
+Windows-8-6.2.9200
+Ren'Py 7.1.0.882
+prueba1 1.0
+Sun Oct 07 22:01:34 2018
