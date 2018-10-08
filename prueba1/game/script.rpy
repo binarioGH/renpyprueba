@@ -1,7 +1,13 @@
 ﻿#-*-coding: utf-8-*-
-define cgc = Character("Circled Glasses Chan", color = "7D88F1")
+image monika = "mon.png"
+image backg = "imagenrandom.jpg"
+define cgc = Character("Monika", color = "#ED7DF1")
 label start:
-    show eileen happy
-    cgc "Hola mundo."
-    cgc "Este es el primer paso :3"
+    play music "musicarandom.mp3"
+    scene backg with fade
+    cgc "Gracias por empezarme a crear un mod uwu"
+    cgc "Los quiero mucho UwU"
+    show monika 
+    with dissolve
+    cgc "Prueba"
     return
