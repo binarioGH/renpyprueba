@@ -2,7 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 13: Tab characters are not allowed in Ren'Py scripts.
+File "game/script.rpy", line 2: expected statement.
+    from getpass import getuser
+                               ^
+
+File "game/script.rpy", line 24: end of line expected.
+    y"Hola {}".format(getuser())
+              ^
 
 Ren'Py Version: Ren'Py 7.1.0.882
-Mon Oct 08 23:29:51 2018
+Mon Oct 08 23:47:27 2018
