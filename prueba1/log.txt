@@ -1,39 +1,38 @@
-Sun Oct 07 23:06:31 2018
+Mon Oct 08 23:33:39 2018
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
  
 
-Bootstrap to the start of init.init took 0.51s
+Bootstrap to the start of init.init took 0.31s
 Early init took 0.02s
-Loader init took 0.30s
-Loading error handling took 0.14s
-Loading script took 0.98s
-Loading save slot metadata. took 0.12s
+Loader init took 0.40s
+Loading error handling took 0.13s
+Loading script took 0.71s
+Loading save slot metadata. took 0.15s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.38s
-Loading analysis data took 0.17s
-Analyze and compile ATL took 0.02s
+Running init code took 0.47s
+Loading analysis data took 0.14s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PerezRomero\\AppData\\Roaming/RenPy/backups\\prueba1':
-Dump and make backups. took 0.49s
+Dump and make backups. took 0.43s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.07s
+Initial gc. took 0.08s
 DPI scale factor: 1.000000
-Creating interface object took 0.26s
+Creating interface object took 0.28s
 Cleaning stores took 0.00s
-Init translation took 0.13s
+Init translation took 0.17s
 Build styles took 0.03s
-Load screen analysis took 0.00s
-Analyze screens took 0.07s
-Save screen analysis took 0.33s
-Prepare screens took 0.43s
+Load screen analysis took 0.10s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.34s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.34s
+Save bytecode. took 0.00s
 Running _start took 0.01s
 Performance test:
-Interface start took 0.10s
+Interface start took 0.09s
 Couldn't import angle renderer:
 Traceback (most recent call last):
   File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\core.py", line 1911, in make_draw
@@ -349,11 +348,33 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 7.18499994278s
+Total time until interface ready: 5.87400007248s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.011000 seconds.
+- Frame drawn at 0.012000 seconds.
 - Frame drawn at 0.021000 seconds.
-- Frame drawn at 0.030000 seconds.
-- Frame drawn at 0.046000 seconds.
-- 0.046000 seconds to render 5 frames.
+- Frame drawn at 0.033000 seconds.
+- Frame drawn at 0.043000 seconds.
+- 0.043000 seconds to render 5 frames.
+0.041000 seconds.
+- Frame drawn at 0.058000 seconds.
+- 0.058000 seconds to render 5 frames.
+Cleaning stores took 0.00s
+Init translation took 0.96s
+Build styles took 0.09s
+Load screen analysis took 0.12s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.01s
+
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1366, 705) drawable=(1366, 705)
+Cleaning stores took 0.00s
+Init translation took 0.96s
+Build styles took 0.08s
+Load screen analysis took 0.08s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
