@@ -2,7 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 37: Tab characters are not allowed in Ren'Py scripts.
+The label mon is defined twice, at
+  File "game/monika.rpy", line 1 and
+  File "game/script.rpy", line 18.
+
+The label yur is defined twice, at
+  File "game/script.rpy", line 24 and
+  File "game/yuri.rpy", line 1.
 
 Ren'Py Version: Ren'Py 7.1.0.882
-Tue Oct 09 18:18:59 2018
+Tue Oct 09 18:54:13 2018
