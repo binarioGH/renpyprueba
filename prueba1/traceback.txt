@@ -1,40 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-Compiling ATL code at game/yuri.rpy:5
-  File "game/yuri.rpy", line 2, in script
-    show yuri d with dissolve:
-Exception: Could not evaluate expression u'xposs -10' when compiling ATL.
+While running game code:
+  File "game/script.rpy", line 21, in script
+    window hide none
+  File "renpy/common/000window.rpy", line 149, in execute_window_hide
+    trans = eval(p)
+  File "game/script.rpy", line 21, in <module>
+    window hide none
+NameError: name 'none' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/yuri.rpy", line 2, in script
-    show yuri d with dissolve:
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\ast.py", line 1151, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\ast.py", line 1121, in show_imspec
-    atl=atl)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\exports.py", line 709, in show
-    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\core.py", line 1058, in add
-    thing._show()
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\transform.py", line 1044, in _show
-    super(ATLTransform, self)._show()
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\transform.py", line 1010, in _show
-    self.update_state()
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\transform.py", line 1032, in update_state
-    fr = self.execute(self, self.st, self.at)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\atl.py", line 513, in execute
-    block = self.compile()
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\atl.py", line 481, in compile
-    block = self.atl.compile(self.context)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\atl.py", line 676, in compile
-    statements = [ i.compile(ctx) for i in self.statements ]
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\atl.py", line 941, in compile
-    raise Exception("Could not evaluate expression %r when compiling ATL." % expr)
-Exception: Could not evaluate expression u'xposs -10' when compiling ATL.
+  File "game/script.rpy", line 21, in script
+    window hide none
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\ast.py", line 1848, in execute
+    self.call("execute")
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\ast.py", line 1836, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\statements.py", line 179, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000window.rpy", line 149, in execute_window_hide
+    trans = eval(p)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\python.py", line 1944, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\python.py", line 1937, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 21, in <module>
+    window hide none
+NameError: name 'none' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
 Prueba Prueba Literature Club 1.5
-Fri Oct 12 22:47:41 2018
+Fri Oct 12 23:08:08 2018

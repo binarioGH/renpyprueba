@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/yuri.rpy", line 5: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    linear 3 xposs 10
-                     ^
+File "game/script.rpy", line 28: expected ':' not found.
+    else if result == "avion":
+         ^
+
+File "game/script.rpy", line 30: expected statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 7.1.0.882
-Fri Oct 12 22:48:23 2018
+Fri Oct 12 23:34:27 2018

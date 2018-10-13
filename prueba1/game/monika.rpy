@@ -8,3 +8,5 @@ label mon:
         ypos 20 xpos 100
         linear 1 xpos -40
     m"Funcionó?"
+    hide monika
+    jump im

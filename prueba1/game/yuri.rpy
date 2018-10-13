@@ -5,3 +5,5 @@ label yur:
         linear 3 xpos 10
         repeat
     y"Parece que me prefieres a mi uwu."
+    hide yuri
+    jump im
