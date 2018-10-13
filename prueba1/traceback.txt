@@ -1,42 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After loading the script.
-TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+Compiling ATL code at game/yuri.rpy:5
+  File "game/yuri.rpy", line 2, in script
+    show yuri d with dissolve:
+Exception: Could not evaluate expression u'xposs -10' when compiling ATL.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\bootstrap.py", line 313, in bootstrap
-    renpy.main.main()
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\main.py", line 415, in main
-    if renpy.parser.report_parse_errors():
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\parser.py", line 2783, in report_parse_errors
-    renpy.display.error.report_parse_errors(full_text, error_fn)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\error.py", line 187, in report_parse_errors
-    error_fn=error_fn,
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\game.py", line 281, in invoke_in_new_context
-    return callable(*args, **kwargs)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\error.py", line 45, in call_exception_screen
-    return renpy.ui.interact(mouse="screen", type="screen", suppress_overlay=True, suppress_underlay=True)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\ui.py", line 289, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\core.py", line 2662, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\core.py", line 3340, in interact_core
-    self.quit_event()
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\core.py", line 2366, in quit_event
-    renpy.exports.take_screenshot()
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\exports.py", line 1573, in take_screenshot
-    renpy.game.interface.take_screenshot(scale, background=background)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\core.py", line 2112, in take_screenshot
-    surf = renpy.display.scale.smoothscale(surf, scale)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\scale.py", line 95, in real_smoothscale
-    dest = pgrender.surface_unscaled(size, src)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\pgrender.py", line 118, in surface
-    surf = Surface((width + 4, height + 4), 0, sample)
-TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+  File "game/yuri.rpy", line 2, in script
+    show yuri d with dissolve:
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\ast.py", line 1151, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\ast.py", line 1121, in show_imspec
+    atl=atl)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\exports.py", line 709, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\core.py", line 1058, in add
+    thing._show()
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\transform.py", line 1044, in _show
+    super(ATLTransform, self)._show()
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\transform.py", line 1010, in _show
+    self.update_state()
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\display\transform.py", line 1032, in update_state
+    fr = self.execute(self, self.st, self.at)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\atl.py", line 513, in execute
+    block = self.compile()
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\atl.py", line 481, in compile
+    block = self.atl.compile(self.context)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\atl.py", line 676, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\atl.py", line 941, in compile
+    raise Exception("Could not evaluate expression %r when compiling ATL." % expr)
+Exception: Could not evaluate expression u'xposs -10' when compiling ATL.
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
- 
-Tue Oct 09 11:09:56 2018
+Prueba Prueba Literature Club 1.5
+Fri Oct 12 22:47:41 2018
