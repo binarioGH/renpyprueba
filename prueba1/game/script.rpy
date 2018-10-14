@@ -9,15 +9,6 @@ define m = Character("Monika", color = "#ED7DF1")
 define y = Character("Yuri", color = "#B533FF")
 
 label start:
-    play music "musicarandom.mp3"
-    scene backg with fade
-    menu:
-        "Monika":
-            jump mon
-        "Yuri":
-            jump yur
-
-label im:
     scene backg2 with fade
     "..."
     "Oh no, he sido teletransportado, debe de ser porque estoy en el mundo de las pruebas."

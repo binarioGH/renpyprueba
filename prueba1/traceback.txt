@@ -1,36 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 21, in script
-    window hide none
-  File "renpy/common/000window.rpy", line 149, in execute_window_hide
-    trans = eval(p)
-  File "game/script.rpy", line 21, in <module>
-    window hide none
-NameError: name 'none' is not defined
+  File "renpy/common/00start.rpy", line 264, in script
+    python:
+ScriptError: could not find label 'start'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 21, in script
-    window hide none
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\ast.py", line 1848, in execute
-    self.call("execute")
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\ast.py", line 1836, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\statements.py", line 179, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000window.rpy", line 149, in execute_window_hide
-    trans = eval(p)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\python.py", line 1944, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\python.py", line 1937, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 21, in <module>
-    window hide none
-NameError: name 'none' is not defined
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\bootstrap.py", line 313, in bootstrap
+    renpy.main.main()
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\main.py", line 513, in main
+    run(restart)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\main.py", line 139, in run
+    renpy.execution.run_context(True)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\execution.py", line 876, in run_context
+    context.run()
+  File "renpy/common/00start.rpy", line 264, in script
+    python:
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\script.py", line 873, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'start'.
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
 Prueba Prueba Literature Club 1.5
-Fri Oct 12 23:08:08 2018
+Fri Oct 12 23:54:56 2018

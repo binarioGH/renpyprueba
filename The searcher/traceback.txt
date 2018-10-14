@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 31, in script
+    jump chat
+ScriptError: could not find label 'chat'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 31, in script
+    jump chat
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\ast.py", line 1620, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\PerezRomero\Downloads\renpy-7.1.0-sdk\renpy\script.py", line 873, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'chat'.
+
+Windows-8-6.2.9200
+Ren'Py 7.1.0.882
+The searcher 1.0
+Sat Oct 13 19:20:55 2018
