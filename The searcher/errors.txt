@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 28: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    if inp == password:
-    ^
+File "game/chat.rpy", line 24: expected statement.
+    continue
+            ^
 
 Ren'Py Version: Ren'Py 7.1.0.882
-Sat Oct 13 19:16:30 2018
+Sat Oct 13 20:54:30 2018

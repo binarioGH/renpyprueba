@@ -6,12 +6,22 @@ label start:
     $ password = "ABCD123" 
     $ psw = 1
     $ llave = False
+    $ wl = True
+    $ tv = False
     scene bg with fade
     "Tengo que encontrar la contraseña de la computadora..."
-    while True:
+    while wl:
         window hide None
         $r = renpy.imagemap("h_ground.jpg", "h_hover.jpg",[(5,276,195,458,"tv"),(155,82,316,414,"mueble"),(525,323,609,386,"pc"),(677,429,757,489,"cajon")])
         if r == "tv":
+            if tv == False:
+                "Creo que no es momento de ver la TV"
+            else:
+                "Que raro, creo que la pantalla está un poco desacomodada"
+                menu:
+                    "Investigar":
+                        "Detras hay una dirección '192 Atlas AV'"
+                    "Ignorar"
             "No creo que sea momento de ver la Televisión."
         elif r == "mueble":
             "Encontré una llave, quizá despues me sea util."
